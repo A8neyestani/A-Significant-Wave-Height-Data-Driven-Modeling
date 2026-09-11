@@ -35,28 +35,49 @@ The associated publication evaluates the GRU model on Tarragona, Barcelona, and 
 
 ## Paper figures
 
-The following figures are the article figures hosted by IEEE Xplore. They are included here as scholarly context for the implementation and are linked to their official source. Copyright in the figures remains with the publisher/rightsholder; the MIT license in this repository applies to the project code and repository materials authored for this release, not to the IEEE figures.
+The following figures were extracted directly from the provided PDF of the associated paper and are stored locally in `docs/figures/`, so they render on the repository landing page without relying on an external image host. Copyright in the figures remains with the publisher/rightsholder; the MIT license in this repository applies to the project code and repository materials authored for this release, not to the IEEE figures.
+
+### Digital-twin context
+
+![OBSEA digital-twin context from the paper](docs/figures/fig-1-digital-twin.jpg)
+
+*Figure 1 from the paper. [Official article page](https://ieeexplore.ieee.org/document/10765714).*
 
 ### Model architecture
 
-![GRU model architecture from the associated paper](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10765360/10765611/10765714/10765714-fig-2-source-large.gif)
+![GRU model architecture from the associated paper](docs/figures/fig-2-gru-architecture.png)
 
-*Figure 2 from the paper: three GRU layers, dropout, and a dense output layer. [Official figure source](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10765360/10765611/10765714/10765714-fig-2-source-large.gif).*
+*Figure 2 from the paper: three GRU layers, dropout, and a dense output layer. [Official article page](https://ieeexplore.ieee.org/document/10765714).*
 
 ### Barcelona evaluation
 
-![Barcelona actual and predicted significant wave height](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10765360/10765611/10765714/10765714-fig-4-source-large.gif)
+![Barcelona residual distribution](docs/figures/fig-3-barcelona-residuals.png)
 
-*Figure 4 from the paper: actual and predicted VHM0 with 95% prediction intervals. [Official figure source](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10765360/10765611/10765714/10765714-fig-4-source-large.gif).*
+*Figure 3 from the paper: residual distribution for the Barcelona dataset.*
+
+![Barcelona actual and predicted significant wave height](docs/figures/fig-4-barcelona-prediction.png)
+
+*Figure 4 from the paper: actual and predicted VHM0 with 95% prediction intervals.*
+
+![Barcelona predictions with flagged outliers](docs/figures/fig-5-barcelona-outliers.png)
+
+*Figure 5 from the paper: actual and predicted VHM0 with flagged outliers.*
 
 ### EMSO-OBSEA evaluation
 
-![EMSO-OBSEA actual and predicted significant wave height](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10765360/10765611/10765714/10765714-fig-7-source-large.gif)
+![EMSO-OBSEA residual distribution](docs/figures/fig-6-obsea-residuals.png)
 
-*Figure 7 from the paper: actual and predicted VHM0 with 95% prediction intervals. [Official figure source](https://ieeexplore.ieee.org/mediastore/IEEE/content/media/10765360/10765611/10765714/10765714-fig-7-source-large.gif).*
+*Figure 6 from the paper: residual distribution for the EMSO-OBSEA dataset.*
 
-The complete figure index and source links are documented in [`docs/figures/README.md`](docs/figures/README.md).
+![EMSO-OBSEA actual and predicted significant wave height](docs/figures/fig-7-obsea-prediction.png)
 
+*Figure 7 from the paper: actual and predicted VHM0 with 95% prediction intervals.*
+
+![EMSO-OBSEA predictions with flagged outliers](docs/figures/fig-8-obsea-outliers.png)
+
+*Figure 8 from the paper: actual and predicted VHM0 with flagged outliers.*
+
+The complete figure index, extraction note, and official article link are documented in [`docs/figures/README.md`](docs/figures/README.md).
 ## Repository layout
 
 ```text
@@ -88,9 +109,9 @@ python -m venv .venv
 # macOS/Linux
 # source .venv/bin/activate
 pip install -e ".[test]"
+```
 
 If you only need the dependency list, `pip install -r requirements.txt` is also supported; install the package itself with `pip install -e .` before using the module command.
-```
 
 TensorFlow is only required when running predictions. The saved model was created with TensorFlow/Keras; using a compatible TensorFlow release is recommended for production deployment.
 
