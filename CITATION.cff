@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the associated paper."
+title: "Significant Wave Height Modeling for Marine Digital Twins"
+type: software
+authors:
+  - family-names: Neyestani
+    given-names: Arman
+version: 1.0.0
+date-released: 2026-09-11
+license: MIT
+repository-code: "https://github.com/A8neyestani/A-Significant-Wave-Height-Data-Driven-Modeling"
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Neyestani
+      given-names: Arman
+    - family-names: Toma
+      given-names: Daniel Mihai
+    - family-names: Falahzadeh
+      given-names: Ahmad
+    - family-names: Daponte
+      given-names: Pasquale
+    - family-names: del Río Fernández
+      given-names: Joaquin
+    - family-names: De Vito
+      given-names: Luca
+  title: "A Significant Wave Height Data-Driven Modeling for Digital Twins of Marine Environment"
+  collection-title: "2024 IEEE International Workshop on Metrology for the Sea (MetroSea)"
+  year: 2024
+  start: 495
+  end: 500
+  publisher: IEEE
+  doi: "10.1109/MetroSea62823.2024.10765714"

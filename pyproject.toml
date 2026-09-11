@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "obsea-swh"
+version = "1.0.0"
+description = "Inference utilities for pretrained GRU significant wave-height modeling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Arman Neyestani"}]
+dependencies = [
+    "numpy>=1.23,<3",
+    "joblib>=1.2,<2",
+    "scikit-learn>=1.2,<2",
+    "tensorflow>=2.11,<3",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

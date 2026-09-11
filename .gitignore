@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+env/
+
+# Notebooks and local tooling
+.ipynb_checkpoints/
+.idea/
+.vscode/
+
+# Local exports and machine-specific artifacts
+Obsea_bouy_data/
+Trained_model_SWH/
+Trained_model_SWH.rar
+*.log
+*.tmp
+
+# Keep the curated sample and deployable model artifacts tracked
+!data/sample/
+!data/sample/obsea_wave_observations.csv
+!models/
+!models/*.h5
+!models/*.pkl
